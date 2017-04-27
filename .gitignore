@@ -39,3 +39,7 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+
+src/assets/ext-6.2.0
+*.swp

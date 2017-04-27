@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+/* http://htmlcolorcodes.com/color-picker/  */
+.read_ann {
+   
+}
+.unread_ann {
+    color: #FFFFFF;
+    background-color: #DF6A73;
+}
+
+.toast_danger {
+    border-color: #D43844;
+}
+
+.toast_success {
+    border-color: #92D438;
+}
+
+.toolbar_cls {
+    background-color: #6C8497;
+}
