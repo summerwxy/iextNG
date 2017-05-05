@@ -27,7 +27,11 @@ export class AppComponent extends OnInit {
             method: 'GET',
             success: function(response, opts) {
               var data = Ext.JSON.decode(response.responseText);
-              Ext.create('ext.app.StoreLayout', data);
+              if (data.s_no === '8027010') {
+                Ext.create('ext.app.CompanyLayout');
+              } else {
+                Ext.create('ext.app.StoreLayout', data);
+              }
             },
             failure: function(response, opts) {
               alert('出错了!');

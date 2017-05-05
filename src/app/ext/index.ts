@@ -1,6 +1,7 @@
 import './utils';
 
 import './pages';
+import './commons';
 
 import './layout';
 import './menu';

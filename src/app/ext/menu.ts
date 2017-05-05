@@ -1,7 +1,7 @@
 // tree panel
 Ext.define('ext.menu.TreeMenu', {
     extend: 'Ext.tree.Panel',
-    xtype: 'mytreemenu', // define xtype using xtype 
+    xtype: 'storetreemenu', // define xtype using xtype 
     rootVisible: false,
     store: Ext.create('Ext.data.TreeStore', {
         root: {
@@ -57,3 +57,26 @@ function openTab(tabs, tabId, record) {
         xtype: xtype
     }).show(); // set active tab
 }
+
+
+
+// =============== company tree panel ===================
+Ext.define('ext.menu.TreeMenu', {
+    extend: 'Ext.tree.Panel',
+    xtype: 'companytreemenu', // define xtype using xtype 
+    rootVisible: false,
+    store: Ext.create('Ext.data.TreeStore', {
+        root: {
+            expanded: true,
+            children: [
+                { text: '门店查询', id: 'qstore', leaf: true },
+                { text: '物料', id: 'qpart', leaf: true },
+                { text: '6L产品异动明细', id: 'q6l', leaf: true },
+                { text: '1V门市产品模板', id: 'q1v', leaf: true }
+            ]
+        }
+    }),
+    listeners: {
+        itemclick: itemclick
+    }
+});
