@@ -2,9 +2,9 @@ declare var utils: any;
 
 utils = {
     data: {
-        // TODO: index.html 也要改成  <base href="dist">    <base href="/">  
-        // TODO: edit this when pack angular
-        isDev: false 
+        // TODO: DEV MODE:  isDev: true, index.html = <base href="/">
+        // TODO: PROD MODE:  isDev: false, index.html = <base href="dist">
+        isDev: true 
     },
 
     isDev: function() {
